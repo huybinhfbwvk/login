@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import {
   ClockCircleOutlined,
   DeleteOutlined,
@@ -19,7 +18,6 @@ import "./HomePage.scss";
 import Sidebar from "../layouts/Sidebar";
 import UserList from "../components/UserList";
 import Header from "../layouts/Header";
-=======
 import "./HomePage.scss";
 import { Col, Row, Input, Table, Button } from "antd";
 import {
@@ -37,7 +35,6 @@ import Column from "antd/es/table/Column";
 import { Link, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import * as userService from "../services/user.service";
->>>>>>> 8884e583758db037b04ea12cf573805c0e2662b2
 
 HomePage.propTypes = {};
 
@@ -55,8 +52,6 @@ function HomePage() {
 
   const navigate = useNavigate();
 
-<<<<<<< HEAD
-=======
   const handleLogout = () => {
     localStorage.removeItem("accessToken");
     navigate("/login");
@@ -64,21 +59,19 @@ function HomePage() {
     // react router chuyển trang
   };
 
->>>>>>> 8884e583758db037b04ea12cf573805c0e2662b2
   useEffect(() => {
     const handleLoad = async () => {
       // Thực hiện hành động sau khi trang chính được tải
       if (!localStorage.getItem("accessToken")) {
         navigate("/login"); // react router chuyển trang
       } else if (localStorage.getItem("accessToken")) {
-<<<<<<< HEAD
+
         //const result: any = await userService.getUser();
         // setUsers(result);
-=======
+
         const result = await userService.getUser(1, 5);
         setUsers(result);
         console.log(result);
->>>>>>> 8884e583758db037b04ea12cf573805c0e2662b2
       }
     };
     handleLoad();
@@ -86,7 +79,7 @@ function HomePage() {
 
   return (
     <div>
-<<<<<<< HEAD
+
       {/* <Header />
       <section>
         <Row>
@@ -107,7 +100,7 @@ function HomePage() {
           </Col> 
          </Row> 
       </section> */}
-=======
+
       <header>
         <Row style={{ margin: "0 20px" }}>
           <Col span={8}>
@@ -197,7 +190,6 @@ function HomePage() {
           </Col>
         </Row>
       </section>
->>>>>>> 8884e583758db037b04ea12cf573805c0e2662b2
     </div>
   );
 }

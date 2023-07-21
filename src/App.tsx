@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { Fragment, useEffect } from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { redirect } from "react-router-dom";
@@ -40,7 +39,7 @@ function App() {
         </div>
       </Router>
     </>
-=======
+
 import { useEffect, useState } from "react";
 import {
   BrowserRouter,
@@ -67,12 +66,8 @@ function App() {
       <Route path="/" Component={HomePage} />
       <Route path="/login" Component={Login} />
     </Routes>
->>>>>>> 8884e583758db037b04ea12cf573805c0e2662b2
+
   );
 }
 
 export default App;
-<<<<<<< HEAD
-//làm danh sách người dùng đi , phân trang, search , ....thêm mới
-=======
->>>>>>> 8884e583758db037b04ea12cf573805c0e2662b2

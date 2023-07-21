@@ -7,7 +7,10 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+<<<<<<< HEAD
     "@tippyjs/react": "^4.2.6",
+=======
+>>>>>>> 8884e583758db037b04ea12cf573805c0e2662b2
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.25",
     "@types/react": "^18.2.3",
@@ -21,13 +24,19 @@
     "react": "^18.2.0",
     "react-cookie": "^4.1.1",
     "react-dom": "^18.2.0",
+<<<<<<< HEAD
     "react-highlight-words": "^0.20.0",
+=======
+>>>>>>> 8884e583758db037b04ea12cf573805c0e2662b2
     "react-redux": "^8.1.1",
     "react-router-dom": "^6.11.1",
     "react-scripts": "5.0.1",
     "redux": "^4.2.1",
     "redux-thunk": "^2.4.2",
+<<<<<<< HEAD
     "tippy.js": "^6.3.7",
+=======
+>>>>>>> 8884e583758db037b04ea12cf573805c0e2662b2
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
@@ -56,7 +65,10 @@
     ]
   },
   "devDependencies": {
+<<<<<<< HEAD
     "@types/react-highlight-words": "^0.16.4",
+=======
+>>>>>>> 8884e583758db037b04ea12cf573805c0e2662b2
     "redux-devtools-extension": "^2.13.9",
     "sass": "^1.62.1"
   }

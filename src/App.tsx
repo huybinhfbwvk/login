@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Fragment, useEffect } from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { redirect } from "react-router-dom";
@@ -39,8 +40,39 @@ function App() {
         </div>
       </Router>
     </>
+=======
+import { useEffect, useState } from "react";
+import {
+  BrowserRouter,
+  Navigate,
+  Route,
+  Routes,
+  useNavigate,
+} from "react-router-dom";
+import HomePage from "./homePage/HomePage";
+import Login from "./login/Login";
+import { redirect } from "react-router-dom";
+
+function App() {
+  const token = localStorage.getItem("accessToken");
+  const navigate = useNavigate();
+  console.log(token);
+  let checkToken;
+  if (token === null) {
+    checkToken = redirect("/login");
+  }
+
+  return (
+    <Routes>
+      <Route path="/" Component={HomePage} />
+      <Route path="/login" Component={Login} />
+    </Routes>
+>>>>>>> 8884e583758db037b04ea12cf573805c0e2662b2
   );
 }
 
 export default App;
+<<<<<<< HEAD
 //làm danh sách người dùng đi , phân trang, search , ....thêm mới
+=======
+>>>>>>> 8884e583758db037b04ea12cf573805c0e2662b2

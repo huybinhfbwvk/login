@@ -13,7 +13,13 @@ const root = createRoot(container as HTMLElement);
 
 root.render(
   <Provider store={store}>
+<<<<<<< HEAD
     <App />
+=======
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+>>>>>>> 8884e583758db037b04ea12cf573805c0e2662b2
   </Provider>
 );
 
